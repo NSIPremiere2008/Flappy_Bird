@@ -1,4 +1,4 @@
-# Tests
+# Tests modifications
 
 # libraries
 import pygame
