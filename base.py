@@ -3,6 +3,7 @@
 # Libraries
 import pygame
 from random import randint
+from pygame import mixer
 
 # Variables globales
 pipewidth = 60
@@ -47,6 +48,11 @@ pipeImg_bottom = pygame.image.load('pipe_up.png')
 # Font d'ecran
 background_Img = pygame.image.load('background.jpg') 
 background_Img = pygame.transform.scale(background_Img, (windowWidth, windowHeight))
+
+# Musique
+mixer.music.load('music.mp3')
+mixer.music.set_volume(100)
+mixer.music.play(-1)
 
 # Fonctions
 def make_pipe():
